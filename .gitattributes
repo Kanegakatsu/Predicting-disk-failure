@@ -35,7 +35,7 @@ lr_test_r2 = r2_score(y_test, y_lr_test_pred)
 #применение модели к новым данным из нового файла csv
 cf = pd.read_csv('C://TD/test1.csv')
 
-#раздедение данных на признаки
+#разделение данных на признаки
 z = df.drop(['FailureAfterMounth', 'serial_number', 'model'], axis=1)
 
 #предсказание выхода из строя жестких дисков
